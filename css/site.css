@@ -3,52 +3,19 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Barlow Semi Condensed", sans-serif;
+    overflow-x: hidden;
 }
 nav {
     margin: 0;
 }
-h1 {
-    margin: 0;
-}
-h2 {
-    margin: 0;
-}
-h3 {
-    margin: 0;
-}
-p {
-    margin: 0;
-}
-#outer {
-    display: table;
+nav ul {
     width: 100%;
-    height: 100%;
 }
-#inner {
-    display: table-cell;
-    vertical-align: middle;
-}
-.jumbotron {
-    height: 100%;
-    height: 100vh;
-    background-image: url(../images/jumbotron.jpg);
-    background-color: #0683C4;
-    background-size: cover;
-    background-position: bottom;
-    position: relative;
-    margin: 0;
-    text-shadow: 0px 1px 1px rgba(150, 150, 150, 0.3);
-}
-.jumbotron h1 {
-    color: #fff;
-}
-.center {
-    position: absolute;
-    top: 33%;
-    left: 10%;
-    right: 10%;
-    text-align: center;
-    color: white;
+nav ul li {}
+nav ul li a {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
 }
 .navbar-dark .navbar-toggler {
     border-color: transparent;
@@ -86,6 +53,9 @@ p {
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
+.navbar-toggler {
+    padding: 0;
+}
 #nav-icon3 span:nth-child(1) {
     top: 2px;
 }
@@ -118,18 +88,18 @@ p {
     width: 0%;
     left: 50%;
 }
-.introduction {
-    background-color: #1F364D;
-    padding: 3% 0;
+h1 {
+    margin: 0;
+    font-size: 4rem;
 }
-.img-thumbnail {
-    background-color: transparent;
-    border-width: 5px;
+h2 {
+    margin: 0;
 }
-.introduction img {
-    width: 75%;
-    margin: 0 auto;
-    display: block;
+h3 {
+    margin: 0;
+}
+p {
+    margin: 0;
 }
 section {
     margin: 0;
@@ -148,18 +118,18 @@ footer {
     background-color: #343a40;
     color: white;
     margin: 0;
-    padding: 3%;
+    padding: 2%;
     text-align: center;
 }
 footer p {
-    padding: 10px 0;
+    padding: 3% 0;
     font-size: 1.2rem;
     width: 100%;
     border-bottom: 2px solid #b4cffa;
     border-radius: 5px;
 }
 footer ul {
-    padding: 0;
+    padding: 3% 0;
     margin: 0 auto;
     list-style: none;
     display: block;
@@ -177,9 +147,142 @@ footer ul li a {
     border: 2px solid white;
     border-radius: 100%;
 }
+
+/*Voor de Logo's in de circel te centreren*/
+
 footer ul li a:before {
     content: '';
     height: 100%;
     display: inline-block;
     vertical-align: middle;
+}
+
+/*Specifieke elementen*/
+
+#outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+#inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.jumbotron {
+    height: 100%;
+    height: 100vh;
+    background-image: url(../images/jumbotron.jpg);
+    background-color: #0683C4;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 1px 1px rgba(150, 150, 150, 0.3);
+}
+.lead {
+    color: white;
+}
+.center {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+.introduction {
+    background-color: #1F364D;
+    padding: 0;
+}
+.introduction .row {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    padding: 10% 0;
+}
+.introduction .row:last-child {
+    border-bottom: none;
+}
+.introduction img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+.img-thumbnail {
+    background-color: transparent;
+    border-width: 5px;
+}
+.letsgo {
+    color: white;
+    background-image: url(../images/keyboard.jpeg);
+    background-color: dimgrey;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+    position: relative;
+}
+.letsgo > .center {
+    top: 20%;
+}
+section button {
+    margin: 25px 0;
+}
+.about p {
+    color: black;
+}
+#carousel {
+    width: 100%;
+    margin-bottom: 5em;
+}
+.carousel-inner .carousel-item {
+    width: 100%;
+    height: 100vh !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.img1 {
+    background: url(../images/Carousel/1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img2 {
+    background: url(../images/Carousel/2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img3 {
+    background: url(../images/Carousel/3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img4 {
+    background: url(../images/Carousel/4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img5 {
+    background: url(../images/Carousel/5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+.carouseltekst {
+    position: absolute;
+    z-index: 3;
+    top: 33%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+}
+.carouseltekst h1 {
+    font-size: 5rem;
 }
