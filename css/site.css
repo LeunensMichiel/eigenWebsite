@@ -147,6 +147,9 @@ footer ul li a {
     border: 2px solid white;
     border-radius: 100%;
 }
+form {
+    margin: 5% 0;
+}
 
 /*Voor de Logo's in de circel te centreren*/
 
@@ -229,6 +232,15 @@ section button {
 .about p {
     color: black;
 }
+.contact {
+    color: white;
+    background-image: url(../images/keyboard.jpeg);
+    background-color: dimgrey;
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+    position: relative;
+}
 #carousel {
     width: 100%;
     margin-bottom: 5em;
@@ -285,4 +297,8 @@ section button {
 }
 .carouseltekst h1 {
     font-size: 5rem;
+}
+#map {
+    height: 400px;
+    width: 100%;
 }
