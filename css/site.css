@@ -5,21 +5,27 @@ body {
     font-family: "Barlow Semi Condensed", sans-serif;
     overflow-x: hidden;
 }
+
 nav {
     margin: 0;
 }
+
 nav ul {
     width: 100%;
 }
+
 nav ul li {}
+
 nav ul li a {
     display: block;
     margin: 0 auto;
     width: 150px;
 }
+
 .navbar-dark .navbar-toggler {
     border-color: transparent;
 }
+
 #nav-icon3 {
     width: 35px;
     height: 35px;
@@ -35,6 +41,7 @@ nav ul li a {
     transition: .5s ease-in-out;
     cursor: pointer;
 }
+
 #nav-icon3 span {
     display: block;
     position: absolute;
@@ -53,67 +60,83 @@ nav ul li a {
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
+
 .navbar-toggler {
     padding: 0;
 }
+
 #nav-icon3 span:nth-child(1) {
     top: 2px;
 }
+
 #nav-icon3 span:nth-child(2),
 #nav-icon3 span:nth-child(3) {
     top: 16px;
 }
+
 #nav-icon3 span:nth-child(4) {
     top: 30px;
 }
+
 #nav-icon3.open span:nth-child(1) {
     top: 20px;
     width: 0%;
     left: 50%;
 }
+
 #nav-icon3.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 #nav-icon3.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
 #nav-icon3.open span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%;
 }
+
 h1 {
     margin: 0;
     font-size: 4rem;
 }
+
 h2 {
     margin: 0;
 }
+
 h3 {
     margin: 0;
 }
+
 p {
     margin: 0;
 }
+
 section {
     margin: 0;
 }
+
 article {
     color: white;
     text-align: justify;
     padding: 5%;
     font-size: 1.2rem;
 }
+
 article h2 {
     font-size: 3rem;
     text-align: center;
 }
+
 footer {
     background-color: #343a40;
     color: white;
@@ -121,6 +144,7 @@ footer {
     padding: 2%;
     text-align: center;
 }
+
 footer p {
     padding: 3% 0;
     font-size: 1.2rem;
@@ -128,16 +152,19 @@ footer p {
     border-bottom: 2px solid #b4cffa;
     border-radius: 5px;
 }
+
 footer ul {
     padding: 3% 0;
     margin: 0 auto;
     list-style: none;
     display: block;
 }
+
 footer ul li {
     display: inline-block;
     margin: 0 5px;
 }
+
 footer ul li a {
     color: white;
     display: block;
@@ -149,11 +176,13 @@ footer ul li a {
     border-radius: 100%;
     transition-duration: .3s;
 }
+
 footer a:hover {
     background-color: white;
     color: #b4cffa;
     border-color: #b4cffa;
 }
+
 form {
     margin: 5% 0;
 }
@@ -174,10 +203,12 @@ footer ul li a:before {
     width: 100%;
     height: 100%;
 }
+
 #inner {
     display: table-cell;
     vertical-align: middle;
 }
+
 .jumbotron {
     height: 100%;
     height: 100vh;
@@ -188,14 +219,17 @@ footer ul li a:before {
     position: relative;
     margin: 0;
     padding: 0;
-    text-shadow: 0px 1px 1px rgba(150, 150, 150, 0.3);
+    text-shadow: 0px 1px 1px rgba(150, 150, 150, 0.7);
 }
+
 .jumbotron .lead {
     color: #65BAD9;
 }
+
 .lead {
     color: white;
 }
+
 .center {
     position: absolute;
     top: 33%;
@@ -205,26 +239,32 @@ footer ul li a:before {
     text-align: center;
     color: white;
 }
+
 .introduction {
     background-color: #1F364D;
     padding: 0;
 }
+
 .introduction .row {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     padding: 10% 0;
 }
+
 .introduction .row:last-child {
     border-bottom: none;
 }
+
 .introduction img {
     width: 75%;
     display: block;
     margin: 0 auto;
 }
+
 .img-thumbnail {
     background-color: transparent;
     border-width: 5px;
 }
+
 .letsgo {
     color: white;
     background-image: url(../images/keyboard.jpeg);
@@ -234,33 +274,40 @@ footer ul li a:before {
     height: 20em;
     position: relative;
 }
+
 .letsgo > .center {
     top: 20%;
 }
-section button {
+
+section .btn {
     margin: 25px 0;
 }
+
 .about {
     margin: 2em 0;
 }
+
 .about p {
     color: black;
 }
+
 .lm {
     color: black;
     height: 30em;
     position: relative;
     background-color: black;
 }
+
 .work {
     color: white;
-    background-image: url(../images/Work.jpg);
+    background-image: url(../images/work.jpeg);
     background-color: dimgrey;
     background-size: cover;
-    background-position: left center;
+    background-position: center;
     height: 30em;
     position: relative;
 }
+
 .contact {
     color: white;
     background-image: url(../images/contact.jpg);
@@ -270,10 +317,12 @@ section button {
     height: 30em;
     position: relative;
 }
+
 #carousel {
     width: 100%;
     margin-bottom: 5em;
 }
+
 .carousel-inner .carousel-item {
     width: 100%;
     height: 100vh !important;
@@ -282,31 +331,37 @@ section button {
     -o-background-size: cover;
     background-size: cover;
 }
+
 .img1 {
     background: url(../images/Carousel/1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .img2 {
     background: url(../images/Carousel/2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .img3 {
     background: url(../images/Carousel/3.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .img4 {
     background: url(../images/Carousel/4.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .img5 {
     background: url(../images/Carousel/5.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -315,6 +370,7 @@ section button {
     background-color: #080d15;
     opacity: .7;
 }
+
 .carouseltekst {
     position: absolute;
     z-index: 3;
@@ -324,16 +380,17 @@ section button {
     width: 100%;
     font-size: 1.2em;
 }
+
 .carouseltekst h1 {
     font-size: 5rem;
 }
+
 #map {
     height: 400px;
     width: 100%;
 }
 
 /*TIMELINE*/
-
 
 /* -------------------------------- 
 
@@ -347,6 +404,7 @@ Modules - reusable parts of our design
     max-width: 1170px;
     margin: 0 auto;
 }
+
 .cd-container::after {
     /* clearfix */
     content: '';
@@ -366,6 +424,7 @@ Main components
     margin-top: 2em;
     margin-bottom: 2em;
 }
+
 #cd-timeline::before {
     /* this is the vertical line */
     content: '';
@@ -376,6 +435,7 @@ Main components
     width: 4px;
     background: #d7e4ed;
 }
+
 @media only screen and (min-width: 1170px) {
     #cd-timeline {
         margin-top: 3em;
@@ -386,21 +446,26 @@ Main components
         margin-left: -2px;
     }
 }
+
 .cd-timeline-block {
     position: relative;
     margin: 2em 0;
 }
+
 .cd-timeline-block:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .cd-timeline-block:first-child {
     margin-top: 0;
 }
+
 .cd-timeline-block:last-child {
     margin-bottom: 0;
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-timeline-block {
         margin: 4em 0;
@@ -412,6 +477,7 @@ Main components
         margin-bottom: 0;
     }
 }
+
 .cd-timeline-img {
     position: absolute;
     top: 0;
@@ -421,6 +487,7 @@ Main components
     border-radius: 50%;
     box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
+
 .cd-timeline-img img {
     display: block;
     width: 24px;
@@ -431,15 +498,19 @@ Main components
     margin-left: -12px;
     margin-top: -12px;
 }
+
 .cd-timeline-img.cd-picture {
     background: #75ce66;
 }
+
 .cd-timeline-img.cd-movie {
     background: #c03b44;
 }
+
 .cd-timeline-img.cd-location {
     background: #f0ca45;
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-timeline-img {
         width: 60px;
@@ -460,6 +531,7 @@ Main components
         animation: cd-bounce-1 0.6s;
     }
 }
+
 @-webkit-keyframes cd-bounce-1 {
     0% {
         opacity: 0;
@@ -473,6 +545,7 @@ Main components
         -webkit-transform: scale(1);
     }
 }
+
 @-moz-keyframes cd-bounce-1 {
     0% {
         opacity: 0;
@@ -486,6 +559,7 @@ Main components
         -moz-transform: scale(1);
     }
 }
+
 @keyframes cd-bounce-1 {
     0% {
         opacity: 0;
@@ -511,6 +585,7 @@ Main components
         transform: scale(1);
     }
 }
+
 .cd-timeline-content {
     position: relative;
     margin-left: 60px;
@@ -519,28 +594,34 @@ Main components
     padding: 1em;
     box-shadow: 0 3px 0 #d7e4ed;
 }
+
 .cd-timeline-content:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .cd-timeline-content h2 {
     color: #303e49;
 }
+
 .cd-timeline-content p,
 .cd-timeline-content .cd-read-more,
 .cd-timeline-content .cd-date {
     font-size: 13px;
     font-size: 0.8125rem;
 }
+
 .cd-timeline-content .cd-read-more,
 .cd-timeline-content .cd-date {
     display: inline-block;
 }
+
 .cd-timeline-content p {
     margin: 1em 0;
     line-height: 1.6;
 }
+
 .cd-timeline-content .cd-read-more {
     float: right;
     padding: .8em 1em;
@@ -548,14 +629,17 @@ Main components
     color: white;
     border-radius: 0.25em;
 }
+
 .no-touch .cd-timeline-content .cd-read-more:hover {
     background-color: #bac4cb;
 }
+
 .cd-timeline-content .cd-date {
     float: left;
     padding: .8em 0;
     opacity: .7;
 }
+
 .cd-timeline-content::before {
     content: '';
     position: absolute;
@@ -566,6 +650,7 @@ Main components
     border: 7px solid transparent;
     border-right: 7px solid white;
 }
+
 @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
         font-size: 20px;
@@ -581,6 +666,7 @@ Main components
         font-size: 0.875rem;
     }
 }
+
 @media only screen and (min-width: 1170px) {
     .cd-timeline-content {
         margin-left: 0;
@@ -632,6 +718,7 @@ Main components
         animation: cd-bounce-2 0.6s;
     }
 }
+
 @media only screen and (min-width: 1170px) {
     /* inverse bounce effect on even content blocks */
     .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
@@ -640,6 +727,7 @@ Main components
         animation: cd-bounce-2-inverse 0.6s;
     }
 }
+
 @-webkit-keyframes cd-bounce-2 {
     0% {
         opacity: 0;
@@ -653,6 +741,7 @@ Main components
         -webkit-transform: translateX(0);
     }
 }
+
 @-moz-keyframes cd-bounce-2 {
     0% {
         opacity: 0;
@@ -666,6 +755,7 @@ Main components
         -moz-transform: translateX(0);
     }
 }
+
 @keyframes cd-bounce-2 {
     0% {
         opacity: 0;
@@ -691,6 +781,7 @@ Main components
         transform: translateX(0);
     }
 }
+
 @-webkit-keyframes cd-bounce-2-inverse {
     0% {
         opacity: 0;
@@ -704,6 +795,7 @@ Main components
         -webkit-transform: translateX(0);
     }
 }
+
 @-moz-keyframes cd-bounce-2-inverse {
     0% {
         opacity: 0;
@@ -717,6 +809,7 @@ Main components
         -moz-transform: translateX(0);
     }
 }
+
 @keyframes cd-bounce-2-inverse {
     0% {
         opacity: 0;
